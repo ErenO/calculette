@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculette" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchbg" translatesAutoresizingMaskIntoConstraints="NO" id="PFM-Rh-YJ7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wsE-S1-fMf">
+                                <rect key="frame" x="145" y="64" width="311" height="450"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="counter" translatesAutoresizingMaskIntoConstraints="NO" id="tyb-yR-ubK">
+                                        <rect key="frame" x="26" y="0.0" width="259" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="259" id="ENJ-ew-BPc"/>
+                                            <constraint firstAttribute="height" constant="65" id="Yeo-gG-0ZR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpanel" translatesAutoresizingMaskIntoConstraints="NO" id="63A-tz-VC8">
+                                        <rect key="frame" x="0.0" y="65" width="311" height="385"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="311" id="50L-3d-BKv"/>
+                                            <constraint firstAttribute="height" constant="385" id="Rkl-Sd-ZXW"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PFM-Rh-YJ7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2YY-GW-kI9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="PFM-Rh-YJ7" secondAttribute="bottom" id="6Iq-1V-C7C"/>
+                            <constraint firstAttribute="trailing" secondItem="PFM-Rh-YJ7" secondAttribute="trailing" id="YkP-ma-NPj"/>
+                            <constraint firstItem="wsE-S1-fMf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="b8c-8F-cma"/>
+                            <constraint firstItem="wsE-S1-fMf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZ8-oc-on8"/>
+                            <constraint firstItem="PFM-Rh-YJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iZw-tw-QIB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="670"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backpanel" width="620" height="938"/>
+        <image name="counter" width="516" height="133"/>
+        <image name="launchbg" width="1433" height="957"/>
+    </resources>
+</document>
